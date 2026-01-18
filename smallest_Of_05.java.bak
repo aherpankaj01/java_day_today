@@ -1,0 +1,12 @@
+class smallest_Of_05
+{
+	public static void main(String[] args) 
+	{
+		int a= 253, b=56, c=87, d=23, e=154;
+		int small;
+		int small2;
+		int small3;
+		int smallest = a>(small3=(small=b>c ? c:b)>(small2=d>e ? e:d) ? small2:small) ? small3:a;
+		System.out.println(smallest);
+	}
+}

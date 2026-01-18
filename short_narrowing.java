@@ -1,0 +1,26 @@
+class  short_narrowing
+{
+	public static void main(String[] args) 
+	{
+		short b1= (short)100;  //100
+		System.out.println(b1);
+		
+		short b2= (short)100000; //-31072
+		System.out.println(b2);
+		
+		short b3= (short) 53690;  //-11864
+		System.out.println(b3);
+		
+		short b4= (short)100l;   //100
+		System.out.println(b4);
+		
+		short b5= (short)100.0f;  //100
+		System.out.println(b5);
+		
+		short b6= (short)10000.56; //10000
+		System.out.println(b6);
+		
+		short b7= (short)'c';    //99
+		System.out.println(b7);
+	}
+}

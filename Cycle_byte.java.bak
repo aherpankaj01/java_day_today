@@ -1,0 +1,13 @@
+class Cycle_byte 
+{
+	public static void main(String[] args) 
+	{
+		byte b3= (byte)15;
+		System.out.println(b1);
+		byte b4= (byte)1000;
+		System.out.println(b1);
+		byte b1= (byte)526;
+		System.out.println(b1);
+		
+	}
+}

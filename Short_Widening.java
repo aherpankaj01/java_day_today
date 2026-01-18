@@ -1,0 +1,22 @@
+class  Short_Widening
+{
+	public static void main(String[] args) 
+	{
+		double b1= 2000;  //2000.0
+		System.out.println(b1);
+		
+		float b2= 2000;  //2000.0
+		System.out.println(b2);
+		
+		long b3= 2000;  //2000
+		System.out.println(b3);
+		
+		int b4= 2000;  //2000
+		System.out.println(b4);
+		
+		char b5= 2000;  //?
+		System.out.println(b5);
+		
+		
+	}
+}

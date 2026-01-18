@@ -1,0 +1,27 @@
+import java.util.*;
+class  Dynamic_Input
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Please eneter your name");
+		Scanner sc = new Scanner(System.in);
+		String  name= sc.nextLine();
+		System.out.println("Please eneter your college name");
+		String  college= sc.nextLine();
+		System.out.println("Where are you from ?");
+		String  place= sc.nextLine();
+		System.out.println("Please eneter your age");
+		int age = sc.nextInt();
+		System.out.println("Please eneter your cgpa");
+		float cgpa = sc.nextFloat();
+		
+		
+		/*System.out.println("Please eneter your degree");
+		String  degree= sc.nextLine();
+		 */
+		System.out.println("plaeasse enter your birth date");
+		String birthDate= sc.nextLine();
+	
+		
+	}
+}
