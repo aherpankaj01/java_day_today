@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+class AlphaDigitOrNot
+{
+    public static void main(String[] args) 
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please enter the input");
+        char ch = sc.next().charAt(0);
+
+        String all =
+            ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z'))
+            ? ((ch >= 'A' && ch <= 'Z')
+                ? (ch + " is an alphabet")
+                : (ch + " is a alphabet"))
+            : ((ch >= '0' && ch <= '9')
+                ? (ch + " is a Digit")
+                : (ch + " is not a alpha  or not a digit"));
+
+        System.out.println(all);
+    }
+}

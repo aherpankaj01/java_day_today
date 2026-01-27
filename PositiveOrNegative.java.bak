@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+class PositiveOrNegative 
+{
+    public static void main(String[] args) 
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please enter the input");
+        int num= sc.nextInt();
+
+        String result = ((ch >=1 || ch <= -1))
+                ? ((ch >=1) 
+                    ? (ch + " is a + ve number") 
+                    : (ch + " is a  - ve number"))
+                : (" Please enter  a umber");
+
+        System.out.println(result);
+    }
+}

@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+class VowelOrConsent
+{
+	public static void main(String[] args) 
+	{
+		
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Please enter the input");
+		char ch = sc.next().charAt(0);
+		String alpha= (ch== 'A' || ch== 'a'|| ch== 'E' || ch== 'e'|| ch== 'I' || ch== 'i'|| ch== 'O' || ch== 'o'|| ch== 'U' || ch== 'u')?( ch + " is a vowel"):( ch + " is a consent");
+		System.out.println(alpha);
+	}
+}

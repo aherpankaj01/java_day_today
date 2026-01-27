@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+class AnyThing 
+{
+	public static void main(String[] args) 
+	{
+		
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Please enter the input");
+		char ch = sc.next().charAt(0);
+		String all= (ch >= '0' && ch <= '9'?((ch>='A' && ch<='Z') || (ch <='a' && ch>= 'z') ?(ch + " is  a uppercase" ) :( ch + " is a lower case")): (ch + " is a digit"): ( ch + " is a symbol"));
+		
+		System.out.println(digit);
+	}
+}
