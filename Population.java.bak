@@ -1,0 +1,26 @@
+import java.util.Scanner;
+class Population 
+{
+	public static void main(String[] args) 
+	{
+		
+		System.out.println("plase enter the population");
+		Scanner sc= new Scanner (System.in);
+		final long population= sc.nextLong();
+		System.out.println("the population of the country is :" + sc);
+		final int  birth = 7;
+		final int  death= 13;
+		final int immigration= 45;
+		
+		final long totalSec= (365*24*60*60)*5;
+		
+		long totalBirth= totalSec/birth;
+		long totalDeath= totalSec/death;
+		long totalImmigration= totalSec/immigration;
+		
+		long totalPopulation= population + totalBirth -  totalDeath + totalImmigration;
+		System.out.println("the total population after 5 year is" + totalPopulation );
+		
+		
+	}
+}
