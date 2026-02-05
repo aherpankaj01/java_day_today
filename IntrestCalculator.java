@@ -1,0 +1,47 @@
+import java.util.Scanner;
+class IntrestCalculator 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc= new Scanner (System.in);
+		for (; ; )
+		{
+			System.out.println("****** Welcome ******");
+			System.out.println("amount : ");
+			double amount = sc.nextDouble();
+			if (amount<1000 || amount >100000)
+			{
+				System.out.println(" \n invalid amount ");
+				continue;
+			}
+			
+			System.out.println("rate if intrest");
+			double intrest = sc.nextDouble();
+			if (intrest<1 || intrest >30)
+			{
+				System.out.println(" \n invalid intrest ");
+				continue;
+			}
+			
+			System.out.println("rate if tenure in month");
+			double tenure = sc.nextInt();
+			if (tenure<3 || tenure >36)
+			{
+				System.out.println(" \n invalid tenure ");
+				continue;
+			}
+			
+			double permonth= (amount/100)*intrest;
+			double totalintrstamount= permonth* tenure;
+			double emi = (amount+totalintrstamount)/tenure;
+			double totalamount= amount+ totalintrstamount;
+			
+			
+			System.out.println("\n monthly emi : " +emi);
+			System.out.println("principle amount :" +amount);
+			System.out.println("total intrest" + totalintrstamount);
+			System.out.println("total amount" +totalamount);
+		}
+	
+	}
+}
