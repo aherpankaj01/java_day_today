@@ -17,7 +17,7 @@ class IntrestCalculator
 			
 			System.out.println("rate if intrest");
 			double intrest = sc.nextDouble();
-			if (intrest< 1 || intrest >30)
+			if (intrest<1 || intrest >30)
 			{
 				System.out.println(" \n invalid intrest ");
 				continue;
