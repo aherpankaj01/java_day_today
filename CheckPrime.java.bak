@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+class CheckPrime 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc= new Scanner(System.in);
+		System.out.println("please eneter the num to check is prime or not ");
+		
+		int num= sc.nextInt();
+		
+		int prime= isPrime(num);
+		if (prime<=2)
+		{
+			System.out.println(num+ "the num is prime");
+		} else {
+			System.out.println(num+ "the num is not prime");
+		}
+
+		
+	}
+	
+	public static int isPrime(int num) {
+		int count= 0;
+		
+		for (int i= num; i>0 ; i--)
+		{
+			if (num%i==0)
+			{
+				count++;
+			}
+				
+		}
+		
+		return count;
+	}
+}
