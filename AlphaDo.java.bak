@@ -1,0 +1,13 @@
+class AlphaDo 
+{
+	public static void main(String[] args) 
+	{
+		char ch= 'A';
+		do
+		{
+			System.out.println(char);
+			ch++;
+		}
+		while (ch <='Z');
+	}
+}
