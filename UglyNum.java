@@ -4,31 +4,43 @@ class UglyNum
 	public static void main(String[] args) 
 	{
 		Scanner sc= new Scanner(System.in);
-		System.out.println("enter the num:");
+		System.out.println("enter the num: ");
 		int num=sc.nextInt();
 		
-		while (num !=0) 
+		if (checkUgly(num))
 		{
-			if (num%2==0)
-			{
-				num/=2;
-			} else if (num%3==0)
-			{
-				num/=3;
-			} else if (num%5==0)
-			{
-				num/=5;
-			}
-			else {
-				break;
-			}
-		}
-		
-		if (num==1)
-		{ System.out.println("the given num is ugly num :");
+			System.out.println("ugly");
 		} else {
-           System.out.println("the given num is not ugly num :");
+			System.out.println("not ugly");
 		}
 		
 	}
+	
+	
+	public static boolean checkUgly(int num) {
+		int temp=num;
+		while (temp!=0)
+		{
+			if (temp%2==0)
+			{
+				temp/=2;
+			} else if (temp%3==0)
+			{
+				temp/=3;
+			} else if (temp%5==0)
+			{
+				temp/=5;
+			} else {
+				break;
+			}
+			
+			
+		}
+		
+		if (temp==1)
+		{
+			return true;
+		} else {
+			return false;
+		}}
 }
